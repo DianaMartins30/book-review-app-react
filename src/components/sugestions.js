@@ -7,15 +7,21 @@ const Sugestions = () => {
   const [bookSugestions, setBookSugestions] = useState([]);
 
   const sugestions = [
-    "100 Years of solitude",
-    "1984",
-    "Crime and punishement",
-    "Dr Jackill and Mrs Hide",
-    "Madame Bovary",
+    "9780805209990",
+    "9789722313308",
+    "9780679420293",
+    "9780452284234",
+    "9780141439570",
+    "9780451528957",
+    "9780486295725",
+    "9780679457312",
+   
   ];
 
+  
+  // (`${OPEN_LIBRARY_API_URL}/search.json?q=${sugestion}`)
   const someSugestions = (sugestion) => {
-     fetch(`${OPEN_LIBRARY_API_URL}/search.json?q=${sugestion}`)
+     fetch(`${OPEN_LIBRARY_API_URL}/isbn/${sugestion}.json`)
       .then((response) => response.json())
       .then((response) => {
         setBookSugestions(oldBookSugestions => [...oldBookSugestions, response]);

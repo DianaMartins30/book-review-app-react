@@ -16,6 +16,8 @@ const Search = () => {
       .then((response) => {
         console.log(response);
         setBook(response);
+        setInputValue("");
+
       })
       .catch((err) => console.error(err));
   };
