@@ -1,15 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-import Search from './components/seach';
-import Sugestions from './components/sugestions';
- 
+import logo from "./logo.svg";
+import "./App.css";
+import Search from "./components/seach";
+import Sugestions from "./components/sugestions";
 
 function App() {
   return (
     <div className="App">
-      <h2 className='text-3xl font-bold underline text-my-dark-purple'>Start the search for your next favorite book</h2>
-      <Search/>
-      <Sugestions/>
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center">
+        <div class="bg-bookshelf h-full md:h-screen p-4">
+          <div className="text-5xl font-bold underline text-amber-100 py-48 px-24">
+            Start the search for your next favorite book
+          </div>
+        </div>
+        <div className="h-full p-4">
+          <Search />
+          <Sugestions />
+        </div>
+      </div>
     </div>
   );
 }

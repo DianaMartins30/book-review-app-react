@@ -6,10 +6,13 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        'my-purple': '#7121D7',
-        'my-dark-purple': '#2E1055',
-        'my-white': '#F5FFFD'
-      }
+        'my-green': '#1B3D2F',
+        'my-white': '#fcfffe',
+        'my-almost-white': '#FFF8E1'
+      },
+      backgroundImage: {
+        'bookshelf': "url('img/bookshelf.jpeg')",
+      },
     },
   },
   plugins: [],
