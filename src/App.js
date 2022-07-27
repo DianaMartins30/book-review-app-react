@@ -7,7 +7,7 @@ import Sugestions from './components/sugestions';
 function App() {
   return (
     <div className="App">
-      <h2 className='text-3xl font-bold underline'>Start the search for your next favorite book</h2>
+      <h2 className='text-3xl font-bold underline text-my-dark-purple'>Start the search for your next favorite book</h2>
       <Search/>
       <Sugestions/>
     </div>
